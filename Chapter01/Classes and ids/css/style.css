@@ -81,11 +81,22 @@ h1 {
   font-weight: bold;
   color: #0072ae;
 }
+.alt-headline{
+  font-size: 40px;
+}
+#main-site-title{
+  color:deeppink;
+}
 h2 {
   font-size:26px;
   font-style: italic;
   color: #eb2428;
   margin-bottom: 10px;
+}
+.column-title{
+  font-style: normal;
+  color: #0072ae;
+  font-weight:bold;
 }
 p {
   font: normal normal 18px/1.6 Georgia, 'Times New Roman', serif;
