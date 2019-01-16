@@ -93,11 +93,20 @@ h2 {
   color: #eb2428;
   margin-bottom: 10px;
 }
-.column-title{
+.secondary-selection h2 {
   font-style: normal;
   color: #0072ae;
   font-weight:bold;
 }
+
+.secondary-selection p {
+  color:deeppink;
+}
+
+.secondary-selection img {
+  border: 10px solid blue;
+}
+
 p {
   font: normal normal 18px/1.6 Georgia, 'Times New Roman', serif;
 }
