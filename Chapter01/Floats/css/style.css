@@ -121,9 +121,24 @@ Interior Pages
 .content-block {
   padding: 50px 0;
 }
+.content-block .figure {
+  margin: 30px;
+  float: left;
+}
+.content-block h1{
+  color: #fff;
+  background-color: deeppink;
+}
 .content-block p {
   font-family: Georgia, 'Times New Roman' sans-serif;
-  clear: none;
+  /* To clear the floating property and how interact with others elements
+    Clear: none is the default value, and response to float elements
+    Clear: both reset the interaction with floats elements
+    Clear: left reset the interaction with floats elements at the right
+    Clear: left reset the interaction with floats elements at the left
+  */
+  clear: none; 
+  background-color: green;
 }
 .style-2 {
   background-color: #494949;
