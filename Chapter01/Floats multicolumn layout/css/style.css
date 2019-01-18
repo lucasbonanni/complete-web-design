@@ -143,11 +143,6 @@ Interior Pages
 .secondary-section{
   margin-bottom: 50px;
   background-color: #7EEEAF;
-  /*Resolve the secondary section colaps 
-  using overflow hidden this resolve the issue
-  but will hide any overflow objet of that area
-  */
-  overflow: hidden;
 }
 /*
 Apply float left to the three columns
