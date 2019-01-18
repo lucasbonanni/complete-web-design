@@ -81,7 +81,14 @@ Global
   margin: 0 auto;
   width: 960px;
 }
-
+/*
+  addit to a div at the botom of the section
+  with the class clear it will fix
+  the problem where secondary section is colapse
+*/
+.clear{
+  clear: both;
+}
 body {
   background-color: #dcdcdc;
   font-family: Arial, Helvetica, sans-serif;
@@ -141,6 +148,10 @@ Interior Pages
 /****************
 3 columns
 ****************/
+.secondary-section{
+  margin-bottom: 50px;
+  background-color: #7EEEAF;
+}
 /*
 Apply float left to the three columns
 a width
