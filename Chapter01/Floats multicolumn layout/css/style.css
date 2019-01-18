@@ -77,7 +77,10 @@ Global
 ::selection {
   background-color: #eb2428; 
 }
-
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
 
 body {
   background-color: #dcdcdc;
@@ -138,9 +141,23 @@ Interior Pages
 /****************
 3 columns
 ****************/
-
-
-
+/*
+Apply float left to the three columns
+a width
+and a margin
+*/
+.column{
+  float: left;
+  width:300px;
+  margin-left: 30px;
+}
+/*
+Target the first column to remove 
+the margin left
+*/
+.column:first-child{
+  margin-left: 0;
+}
 
 
 
