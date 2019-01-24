@@ -1,0 +1,131 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    /*line-height: 1;*/
+    width: 97vw;
+    height: 97vh;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.border{
+    border-style: solid;
+    border-width: 2px;
+}
+
+.header {
+    display:block;
+    border-color: blue;
+    width: 99.7vw;
+    height: 20vh;
+}
+
+.side-nav {
+    position: relative;
+    display: inline-block;
+    border-color: green;
+    width: 10%;
+}
+.side-nav li {
+    margin:10px;
+}
+
+.side-nave ul {
+    margin:20px;
+}
+
+.main-article {
+    position: relative;
+    display: inline-block;
+    border-color: black;
+    padding:10px;
+    margin:10px 20px 20px 10px;
+    width: 80vw;
+}
+
+.main-article h1 {
+    font-size: 25pt;
+    margin-bottom: 15px;
+    margin-top:20px;
+}
+
+.ads {
+    position: relative;
+    display: inline-block;
+    border-color:purple;
+    width: 99.7vw;
+}
+
+.adv {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    width: calc(( 100% /3) - 25px) ;
+    height: 90px;
+    margin:10px;
+    background-color: darkgoldenrod;
+}
+
+.footer {
+    position: relative;
+    display: inline-block;
+    border-color: yellowgreen;
+    width: 99.7vw;
+}
+
+.column {
+    position: relative;
+    box-sizing: border-box;
+    width:calc(100% /3) ;
+    float: left;
+    padding:10px
+}
+
+.column p {
+    margin: 0px 0 10px 0;
+}
+
+.column h3 {
+    font-size: 18pt;
+}
