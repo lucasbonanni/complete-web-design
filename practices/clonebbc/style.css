@@ -215,10 +215,48 @@ p {
 .details{
 	float: left;
 }
+.left div {
+	margin-bottom: 20px;
+	width: 100%;
+}
 .time {
-	font-size: 11pt;
+	font-size: 9pt;
+	float: right;
+	padding-right: 10px;
 }
 .tag {
-	font-size:11pt;
+	font-size:9pt;
 	color:red;
+	float: right;
+	padding-right: 10px;
+}
+h2 {
+	font-size: 15pt;
+	margin-bottom: 20px;
+}
+
+.video-container {
+	margin-top: 5px;
+	margin-left: 13px;
+}
+
+.video-news{
+	clear: both;
+	margin-bottom: 45px;
+}
+
+.video-news img {
+	height: 60px;
+	width: 106px;
+	float: left;
+	margin-right: 8px;
+}
+
+h4 {
+	/* margin-left: 5px; */
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 11pt;
+	line-height: 1.3;
+	color: black;
 }
