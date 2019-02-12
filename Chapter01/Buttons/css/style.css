@@ -170,7 +170,29 @@ Interior Pages
 .content-block .figure {
   float: left;
   margin: 30px;
+  border: white 10px solid;
+  overflow: hidden;
 }
+
+.content-block .figure img {
+  /* float left the image to resolve
+  high issue (the white frame figure is highier
+  than the picture
+  */
+  float: left;
+  transition: .25s all ease-in-out;
+   -webkit-transition: .25s all ease-in-out;
+  -moz-transition: .25s all ease-in-out;
+  -o-transition: .25s all ease-in-out;
+}
+
+.content-block .figure img:hover {
+  transform: rotate(15deg) scale(1.5,1.5);
+  -webkit-transform: rotate(15deg) scale(1.5,1.5);
+  -moz-transform: rotate(15deg) scale(1.5,1.5);
+  -o-transform: rotate(15deg) scale(1.5,1.5);
+}
+
 /****************
 3 columns
 ****************/
