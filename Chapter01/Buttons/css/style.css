@@ -189,6 +189,12 @@ Interior Pages
 /******************
 Buttons
 ******************/
+.button:focus,
+.button:hover {
+  background-color: #333;
+  color: #fff;
+  
+}
 
 .button {
  border: 2px solid;
@@ -199,5 +205,18 @@ Buttons
  text-align: center;
  font-weight: bold;
  letter-spacing: 1.5px;
+ transition: 0.25s color linear,1s background-color linear;
 }
+
+.button-narrow {
+  width: 25%;
+}
+
+.button-alt {
+  color: white;
+  border-color: white;
+}
+
+
+
 
