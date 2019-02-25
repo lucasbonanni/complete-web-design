@@ -143,12 +143,43 @@ Modular Styles
   text-align: center; 
 }
 /****************
-Interior Pages
+Go Premium
 ****************/
 .intro-content  {
-  width: 100%;
-  padding-bottom: 80px;
+  width: 360px;
+  margin-right: 60px;
+  float: left;
 }
+.go-premium {
+  width: 300px;
+  margin-top: 125px;
+  float: left;
+}
+.call-to-action {
+  border: #fff 2px solid;
+  color: #fff;
+  background-color: #0072ae;
+  padding: 25px 0;
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  transition: .25s all ease-in-out;
+  -webkit-transition: .25s all ease-in-out;
+ -moz-transition: .25s all ease-in-out;
+ -o-transition: .25s all ease-in-out;
+}
+.call-to-action:hover {
+  color: #0072ae;
+  background: none;
+  border-color: #0072ae;
+}
+
+/****************
+Interior Pages
+****************/
+
 .content-block {
   padding: 50px 0;
 }
