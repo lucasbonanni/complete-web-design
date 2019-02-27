@@ -191,6 +191,7 @@ h2 {
 p {
     line-height: 1.6;
     margin-bottom: 20px;
+    font-size: 16px;
 }
 /***************
 Modular Styles
@@ -227,60 +228,110 @@ Modular Styles
     text-align: center;
 }
 /****************
+Buttons
+****************/
+.button {
+    border: 2px solid #333;
+    color: #333;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+    transform: scale(0.9, 0.9);
+}
+.button:focus,
+.button:hover {
+    background-color: #333;
+    color: #fff;
+    -webkit-transform: scale(1, 1) translate(0, -5px);
+    -moz-transform: scale(1, 1) translate(0, -5px);
+    -ms-transform: scale(1, 1) translate(0, -5px);
+    transform: scale(1, 1) translate(0, -5px);
+}
+.button-narrow {
+    width: 25%;
+}
+.button-alt {
+    color: #fff;
+    border-color: #fff;
+}
+/****************
 Go Premium
 ****************/
 .intro-content {
-    width: 360px;
+    width: 600px;
     margin-right: 60px;
     float: left;
 }
 .go-premium {
     width: 300px;
-    margin-top: 125px;
     float: left;
+    margin-top: 125px;
 }
 .call-to-action {
-    border: #fff 2px solid;
+    border: 2px solid #fff;
     color: #fff;
+    background-color: #0072ae;
     padding: 25px 0;
     display: block;
-    text-align: center;
     border-radius: 10px;
+    text-align: center;
     font-size: 22px;
     font-weight: bold;
-    transition: 0.25s all ease-in-out;
-    -webkit-transition: 0.25s all ease-in-out;
-    -moz-transition: 0.25s all ease-in-out;
-    -o-transition: 0.25s all ease-in-out;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#33d3ff+1,0072ae+100 */
-    background: #0072ae; /* Old browsers */
-    background: -moz-linear-gradient(
-        top,
-        #33d3ff 1%,
-        #0072ae 100%
-    ); /* FF3.6-15 */
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    background: #33d3ff; /* Old browsers */
+    background: -moz-linear-gradient(top, #33d3ff 0%, #0071ae 99%); /* FF3.6+ */
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0%, #33d3ff),
+        color-stop(99%, #0071ae)
+    ); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(
         top,
-        #33d3ff 1%,
-        #0072ae 100%
-    ); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(
-        to bottom,
-        #33d3ff 1%,
-        #0072ae 100%
-    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33d3ff', endColorstr='#0072ae',GradientType=0 ); /* IE6-9 */
+        #33d3ff 0%,
+        #0071ae 99%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+        top,
+        #33d3ff 0%,
+        #0071ae 99%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #33d3ff 0%, #0071ae 99%); /* IE10+ */
+    background: linear-gradient(to bottom, #33d3ff 0%, #0071ae 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33d3ff', endColorstr='#0071ae',GradientType=0 ); /* IE6-9 */
 }
 .call-to-action:hover {
+    border-color: #0072ae;
     color: #0072ae;
     background: none;
-    border-color: #0072ae;
 }
+.reasons {
+    color: #333;
+    font-size: 12px;
+    margin-top: 15px;
+    text-align: center;
+}
+/****************
+nav
+****************/
 
 /****************
 Interior Pages
 ****************/
-
+.intro-content {
+    padding-bottom: 80px;
+}
 .content-block {
     padding: 50px 0;
 }
@@ -302,35 +353,29 @@ Interior Pages
 .content-block .figure {
     float: left;
     margin: 30px;
-    border: white 10px solid;
+    border: 15px solid #fff;
     overflow: hidden;
 }
-
 .content-block .figure img {
-    /* float left the image to resolve
-  high issue (the white frame figure is highier
-  than the picture
-  */
     float: left;
-    transition: 0.25s all ease-in-out;
-    -webkit-transition: 0.25s all ease-in-out;
-    -moz-transition: 0.25s all ease-in-out;
-    -o-transition: 0.25s all ease-in-out;
+    -webkit-transition: transform 0.25s ease-in-out;
+    -moz-transition: transform 0.25s ease-in-out;
+    -o-transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
 }
-
 .content-block .figure img:hover {
-    transform: rotate(15deg) scale(1.5, 1.5);
-    -webkit-transform: rotate(15deg) scale(1.5, 1.5);
-    -moz-transform: rotate(15deg) scale(1.5, 1.5);
-    -o-transform: rotate(15deg) scale(1.5, 1.5);
+    -webkit-transform: rotate(15deg) scale(1.25, 1.25);
+    -moz-transform: rotate(15deg) scale(1.25, 1.25);
+    -ms-transform: rotate(15deg) scale(1.25, 1.25);
+    -o-transform: rotate(15deg) scale(1.25, 1.25);
+    transform: rotate(15deg) scale(1.25, 1.25);
 }
-
-/****************
-3 columns
-****************/
 .secondary-section {
     margin-bottom: 50px;
 }
+/****************
+3 columns
+****************/
 .column {
     float: left;
     width: 300px;
@@ -338,34 +383,4 @@ Interior Pages
 }
 .column:first-child {
     margin-left: 0;
-}
-
-/******************
-Buttons
-******************/
-.button:focus,
-.button:hover {
-    background-color: #333;
-    color: #fff;
-}
-
-.button {
-    border: 2px solid;
-    color: #333;
-    padding: 10px 0;
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    transition: 0.25s color linear, 1s background-color linear;
-}
-
-.button-narrow {
-    width: 25%;
-}
-
-.button-alt {
-    color: white;
-    border-color: white;
 }
