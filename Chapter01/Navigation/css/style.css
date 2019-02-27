@@ -328,10 +328,15 @@ nav
 /*
  Just direct children
 */
+nav {
+    background-color: #fff;
+}
+nav img {
+    width: 160px;
+}
 .primary-nav {
     float: right;
 }
-
 .primary-nav > li {
  float: left;
 
@@ -342,6 +347,33 @@ nav
     padding: 25px 0;
     width: 150px;
     border-left: 1px solid #ada791;
+}
+/*Just focuses in end of type of li
+.primary-nav > li:nth-of-type(2) > a {
+    background-color:deeppink;
+    color: #fff;
+}
+*/
+/*
+.primary-nav > li:last-child > a {
+    background-color:deeppink;
+    color: #fff;
+}*/
+/*
+.primary-nav > li:nth-child(2) > a {
+    background-color:deeppink;
+    color: #fff;
+}*/
+/*   For intercalte columns use even or odd
+or zebra striping a table
+.primary-nav > li:nth-child(even) > a {
+    background-color:deeppink;
+    color: #fff;
+}
+*/
+
+.primary-nav > li:first-child > a{
+    border-left: none;
 }
 
 nav li a {
