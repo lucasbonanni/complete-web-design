@@ -379,12 +379,7 @@ nav figure {
     position: absolute;
     top: -50;
     right: 50;
-    -webkit-animation-name: crazyShark;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-delay: 2s;
-    -webkit-animation-iteration-count: 3;
-    -webkit-animation-fill-mode: backwards;
+    -webkit-animation: crazyShark 1s ease;
   }
   
   @-webkit-keyframes crazyShark {
@@ -393,14 +388,13 @@ nav figure {
       opacity: 0;
     }
     33% {
-      -webkit-transform: translate(40%, 20%) rotate(90deg);
-      
+      -webkit-transform: translate(40%, 20%);
     }
     66% {
       -webkit-transform: translate(18%, 50%);
     }
     100%{
-      -webkit-transform: translate(0%) rotate(90deg);
+      -webkit-transform: translate(0%);
       opacity: 1;
     }
   }
