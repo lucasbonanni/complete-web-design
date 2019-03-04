@@ -447,6 +447,30 @@ nav li a.active {
     background-color: #eb2428;
     color: #fff;
 }
+/****************
+Drop down menu
+****************/
+.has-submenu ul {
+ position: absolute;
+ top: 70px;
+ background-color: #fff;
+ border-bottom: 1px solid #ada791;
+ border-left: 1px solid #ada791;
+ border-right: 1px solid #ada791;
+ width: 150px;
+ border-radius: 0 0 15px 15px;
+ overflow: hidden;
+ display: none;
+}
+.has-submenu:hover ul{
+  display: block;
+}
+.has-submenu a {
+  display: block;
+  padding: 20px 0;
+}
+
+
 
 /****************
 Interior Pages
