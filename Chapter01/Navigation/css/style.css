@@ -470,6 +470,7 @@ Drop down menu
 ****************/
 .has-submenu ul {
  position: absolute;
+ z-index: 5;
  top: 70px;
  background-color: #fff;
  border-bottom: 1px solid #ada791;
@@ -504,6 +505,8 @@ Drop down menu
 .has-submenu a {
   display: block;
   padding: 20px 0;
+  position: relative;
+  z-index: 10;
 }
 
 
