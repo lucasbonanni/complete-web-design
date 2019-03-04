@@ -464,7 +464,25 @@ Drop down menu
 }
 .has-submenu:hover ul{
   display: block;
+  -webkit-animation-name: slideDown;
+  -webkit-animation-duration: .25s;
+  -webkit-animation-timing-function: ease;
 }
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    opacity: 0;
+  }
+  90% {
+    -webkit-transform: translateY(10%);
+  }
+  100%{
+    -webkit-transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 .has-submenu a {
   display: block;
   padding: 20px 0;
