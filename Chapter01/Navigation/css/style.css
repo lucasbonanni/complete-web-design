@@ -301,12 +301,13 @@ Go Premium
     width: 600px;
     margin-right: 60px;
     float: left;
+    margin-top: 125px;
 }
 
 .go-premium {
     width: 300px;
     float: left;
-    margin-top: 125px;
+    margin-top: 150px;
 }
 
 .call-to-action {
@@ -368,10 +369,16 @@ nav
 */
 nav {
     background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 nav figure {
     position: absolute;
+    top: -50;
+    right: 50;
 }
 
 nav img {
