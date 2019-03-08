@@ -79,7 +79,8 @@ Global
 }
 
 .wrapper {
-  width:960px;
+  max-width:960px;
+  width: 90%;
   margin: 0 auto;
 }
 body {
@@ -182,12 +183,12 @@ Buttons
 Go Premium
 ****************/
 .intro-content {
-  width: 600px;
-  margin-right: 60px;
+  width: 62.5%; /* 600/960 */
+  margin-right: 6.25%; /* 60/960 */
   float: left;
 }
 .go-premium {
-  width: 300px;
+  width: 31.25%; /* 300/960 */
   float: left;
   margin-top: 150px;
 }
@@ -244,6 +245,9 @@ nav figure {
   -webkit-animation: crazyShark 1s ease;  
   animation: crazyShark 1s ease;
 }
+nav img {
+  width: 160px;
+}
 @-webkit-keyframes crazyShark {
   0% { -webkit-transform: translate(45%, 35%);opacity: 0;}   
   33% {-webkit-transform: translate(20%, 10%) rotate(90deg);}
@@ -255,10 +259,6 @@ nav figure {
   33% {transform: translate(20%, 10%) rotate(90deg);}
   66% {transform: translate(5%, 25%);}
   100% {transform: translate(0%) rotate(0deg);opacity: 1;} 
-}
-
-nav img {
-  width: 160px;
 }
 .primary-nav {
   float: right;
@@ -357,7 +357,7 @@ Interior Pages
 }
 .content-block .figure {
   float: left;
-  margin: 30px;
+  margin: 30px 3.125%; /* 30/960 */
   border: 15px solid #fff;
   overflow: hidden;
 }
@@ -376,15 +376,14 @@ Interior Pages
   transform: rotate(15deg) scale(1.25, 1.25);
 }
 .secondary-section {
-  margin-bottom: 50px;  
-}
+  margin-bottom: 50px;  }
 /****************
 3 columns
 ****************/
 .column {
   float: left;
-  width: 300px; 
-  margin-left: 30px; 
+  width: 31.25%; /* 300/960 */
+  margin-left: 3.125%; /* 30/960 */
 }
 .column:first-child {
   margin-left: 0;
