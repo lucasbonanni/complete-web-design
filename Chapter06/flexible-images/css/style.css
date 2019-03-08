@@ -68,6 +68,14 @@ strong {
 img, iframe, video, object {
   max-width: 100%; 
 }
+html {
+  /* Add as a general rule in the css to avoid
+  repeat the property each time */
+  box-sizing: border-box;
+}
+*,*::before, *::after {
+  box-sizing: inherit;
+}
 /***************
 Global
 ***************/
@@ -244,10 +252,9 @@ nav figure {
   left: 50px;
   -webkit-animation: crazyShark 1s ease;  
   animation: crazyShark 1s ease;
-}
-nav img {
   width: 160px;
 }
+
 @-webkit-keyframes crazyShark {
   0% { -webkit-transform: translate(45%, 35%);opacity: 0;}   
   33% {-webkit-transform: translate(20%, 10%) rotate(90deg);}
@@ -360,6 +367,8 @@ Interior Pages
   margin: 30px 3.125%; /* 30/960 */
   border: 15px solid #fff;
   overflow: hidden;
+  /*box-sizing: border-box;  use to have one width */
+  width: 23.9583333333%; /* 230/960*/
 }
 .content-block .figure img {
   float: left;
