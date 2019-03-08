@@ -418,6 +418,13 @@ Start of Media Queries
     width: 100%;
     height: 0;
     overflow: hidden;
+    transition: all ease-in-out .35s;
+    -webkit-transition: all ease-in-out .35s;
+    -moz-transition: all ease-in-out .35s;
+    -o-transition: all ease-in-out .35s;
+  }
+  .primary-nav.active {
+    height: 350px;
   }
   .primary-nav > li {
     float: right;
