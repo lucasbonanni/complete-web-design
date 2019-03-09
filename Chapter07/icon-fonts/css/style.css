@@ -521,3 +521,29 @@ Interior Pages
   }
 }/* end of media query */
 
+footer {
+  margin-top: 200px;
+  height: 450px;
+}
+
+footer .wrapper ul {
+  float: left;
+  display: inline;
+  /* width: 320px; */
+  width: 200px;
+}
+
+footer .list-heading {
+  text-transform: uppercase;
+  font-family: 'Maven Pro', Arial, sans-serif;
+  margin-bottom: 30px;
+}
+
+footer ul a {
+  font-size: 9pt;
+  color: black;
+}
+footer p {
+  float:right;
+  font-size: 7pt;
+}
