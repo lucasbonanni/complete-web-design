@@ -547,3 +547,13 @@ footer p {
   float:right;
   font-size: 7pt;
 }
+
+footer .icon {
+  margin-right: 10px;
+  font-size: 30px;
+  transition: 0.25s color ease-in-out;
+}
+
+footer a:hover .icon {
+  color: #f00;
+}
